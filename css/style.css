@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
+:root{
+  --crimson:crimson;
+  --dark-red:#680404;
+  --black:#333;
+  --white:#fff;
+  --light-black:#666;
+  --light-bg:#eee;
+  --dark-bg:rgba(0,0,0,.7);
+  --border:1px solid #999;
+  --box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
 *{
    font-family: 'Montserrat', sans-serif;
    margin:0; padding:0;
@@ -12,6 +24,23 @@
 
 body{
   background-color: #eee;
+}
+
+.btn{
+  margin-top: 10px;
+  display: inline-block;
+  padding:10px 30px;
+  cursor: pointer;
+  font-size: 17px;
+  background-color: var(--light-bg);
+  color:var(--black);
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.btn:hover{
+  background-color: var(--light-black);
+  color:var(--white);
 }
 
 .container{
@@ -29,6 +58,20 @@ body{
   border:3px solid #000;
   padding:12px 15px;
   font-size: 20px;
+}
+
+.container .btn{
+  margin-left: 5px;
+}
+
+.container .btn.active{
+  background-color: var(--crimson);
+  color:var(--white);
+}
+
+.btn.active:hover{
+  background-color: var(--dark-red);
+  color:var(--white);
 }
 
 .container .image-container{
