@@ -8,9 +8,9 @@ function updateSearch() {
       if (btn.classList.contains('active')){
             categ += btn.getAttribute('data-category')
       }});
-   if (categ.length == 0){
-      categ = '!@#$%^&*'
-   }
+   // if (categ.length == 0){
+   //    categ = '!@#$%^&*'
+   // }
    //console.log(categ);
    images.forEach(hide => hide.style.display = 'none');
    let value = searchBox.value.toLowerCase();
